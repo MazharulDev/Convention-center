@@ -72,7 +72,7 @@
                       <h1 class="fw-bold">This picture will leave a symbol <br> of your love</h1>
                       <p>Stay by the side of people you love, learn to love Encourage others to love. <br> So that every man can love
                       </p>
-                      <button type="button" class="btn btn-light btn-lg text-primary">Book Now</button>
+                      <button type="button" class="btn btn-light btn-lg text-primary"><a class="text-decoration-none" href="https://pixabay.com/ " target="-blank">Book Now</a></button>
                     </div>
                   </div>
                   <div class="carousel-item">
@@ -81,7 +81,7 @@
                         <h1 class="fw-bold">Looking at these two, they are very eager to get <br> married under the tree</h1>
                         <p>Stay by the side of people you love, learn to love Encourage others to love. <br> So that every man can love
                         </p>
-                          <button type="button" class="btn btn-light btn-lg text-primary">Book Now</button>
+                        <button type="button" class="btn btn-light btn-lg text-primary"><a class="text-decoration-none" href="https://pixabay.com/ " target="-blank">Book Now</a></button>
                     </div>
                   </div>
                   <div class="carousel-item">
@@ -90,7 +90,7 @@
                         <h1 class="fw-bold">The two of them prefer to love <br> under the open sky</h1>
                         <p>Stay by the side of people you love, learn to love Encourage others to love. <br> So that every man can love
                         </p>
-                          <button type="button" class="btn btn-light btn-lg text-primary">Book Now</button>
+                        <button type="button" class="btn btn-light btn-lg text-primary"><a class="text-decoration-none" href="https://pixabay.com/ " target="-blank">Book Now</a></button>
                     </div>
                   </div>
                   <div class="carousel-item">
@@ -99,7 +99,7 @@
                         <h1 class="fw-bold">They want to make love stand <br> on the balcony.</h1>
                         <p>Stay by the side of people you love, learn to love Encourage others to love. <br> So that every man can love
                         </p>
-                          <button type="button" class="btn btn-light btn-lg text-primary">Book Now</button>
+                        <button type="button" class="btn btn-light btn-lg text-primary"><a class="text-decoration-none" href="https://pixabay.com/ " target="-blank">Book Now</a></button>
                     </div>
                   </div>
 
@@ -179,7 +179,16 @@
 
 
          <!-- secvice section end  -->
-       
+         <!-- toast add  -->
+
+         <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          
+          <div class="toast-body">
+            <p class="d-inline me-5">Hello, world! This is a toast message.</p>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            
+          </div>
+        </div>
 
          <!-- toast end  -->
         <div class="container py-5">
@@ -285,17 +294,7 @@
         <section class="container">
 
           <!-- toast add  -->
-          <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="toast-header">
-              <img src="..." class="rounded me-2" alt="...">
-              <strong class="me-auto">Bootstrap</strong>
-              <small>11 mins ago</small>
-              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-            </div>
-            <div class="toast-body">
-              Hello, world! This is a toast message.
-            </div>
-          </div>
+
 
 
 
@@ -388,11 +387,11 @@
                 </div>
             </div>
         </section>
-        <!-- Other section  -->
-        <section>
+        <!-- client feedback  -->
+        <section class="py-5">
             <div>
                 <div>
-                    <h2 class="text-center py-5">Client Feedback</h2>
+                    <h2 class="text-center">Client Feedback</h2>
                 </div>
                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
@@ -449,11 +448,10 @@
             </div>
         </div>
     </footer>
-   
 
     
-
-
+    
+   
 
     <!-- bootstrap script link  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -461,10 +459,12 @@
     <script src="https://kit.fontawesome.com/f0dfa13315.js" crossorigin="anonymous"></script>
     <!-- toast script  -->
     <script>
+
       window.onload = (event) => {
-        let myAlert = document.querySelectorAll('.toast');
-        let bsAlert = new bootstrap.Toast(myAlert);
-        bsAlert.show();
+        var myToastEl = document.querySelector('.toast');
+        var myToast = bootstrap.Toast.getOrCreateInstance(myToastEl);
+        myToast.show();
+        
       }
     </script>
  
