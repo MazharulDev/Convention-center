@@ -22,3 +22,7 @@
 a{
     text-decoration: none;
 }
+
+.toast-style{
+    border-left: 6px solid blue;
+}
