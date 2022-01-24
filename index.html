@@ -20,7 +20,43 @@
    
     <!-- header section start  -->
     <header>
-        <h5 class="container py-3 fw-bolder">Miforbd Convension center</h5>
+      <!-- nav start  -->
+        <nav>
+          <div>
+            <div>
+              <nav class="navbar navbar-expand-lg navbar-light py-4">
+                <div class="container">
+                  <a class="navbar-brand fw-bold fs-3" href="#">Fancy Convension center</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#">About Us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#">Contact</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#">Subscribe</a>
+                      </li>
+                      
+                      
+                      
+                    </ul>
+                    
+                  </div>
+                </div>
+              </nav>
+            </div>
+
+          </div>
+        </nav>
+        <!-- nav end  -->
         <div>
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -230,7 +266,7 @@
                         <h5 class="card-title">Corporate Event</h5>
                           <div class="text-secondary">
                               <p class="card-text">For most corporate business 
-                                events</p>
+                                events for out convention center</p>
                                   <p><i class="fas fa-check-circle text-muted"></i> Limited space access</p>
                                   <p><i class="fas fa-check-circle text-muted"></i> Security Policy</p>
                                   <p><i class="fas fa-check-circle text-muted"></i> Event support</p>
@@ -247,6 +283,23 @@
         </div>
         <!-- questions -->
         <section class="container">
+
+          <!-- toast add  -->
+          <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <img src="..." class="rounded me-2" alt="...">
+              <strong class="me-auto">Bootstrap</strong>
+              <small>11 mins ago</small>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+              Hello, world! This is a toast message.
+            </div>
+          </div>
+
+
+
+          <!-- toast end  -->
             <div>
                 <div class="text-center  py-5 ">
                     <h2>Why Choose the Oregon Convension Center?</h2>
@@ -407,6 +460,13 @@
     <!-- font awosome link  -->
     <script src="https://kit.fontawesome.com/f0dfa13315.js" crossorigin="anonymous"></script>
     <!-- toast script  -->
+    <script>
+      window.onload = (event) => {
+        let myAlert = document.querySelectorAll('.toast');
+        let bsAlert = new bootstrap.Toast(myAlert);
+        bsAlert.show();
+      }
+    </script>
  
 </body>
 </html>
