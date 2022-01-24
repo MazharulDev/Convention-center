@@ -1,13 +1,16 @@
 
-/* button color  */
+/*=======================================
+ button color  
+ ========================================*/
 .btn-bg{
     
     background-color: rgb(235, 231, 231);
 }
-/* package highlight section  */
+/* ====================================
+package highlight section  
+=======================================*/
 .highlight{
-    background-color: 
-    #3F87F5;
+    background: linear-gradient(to right, #3c1053, #ad5389);
     color: #fff;
     border-radius: 30px;
     margin-bottom: 5px;
@@ -15,14 +18,18 @@
     padding-bottom: 10px;
 
 }
-/* budge style add  */
+/* ===============================
+budge style add  
+===================================*/
 .budge-size{
     left: 85%;
 }
 a{
     text-decoration: none;
 }
-
+/* ===============================
+toast style 
+==================================*/
 .toast-style{
     border-left: 6px solid blue;
 }
